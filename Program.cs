@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HotelManageSystem
+namespace 酒店管理系统
 {
     static class Program
     {
