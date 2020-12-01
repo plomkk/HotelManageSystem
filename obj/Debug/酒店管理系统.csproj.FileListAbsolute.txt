@@ -17,3 +17,13 @@ C:\Users\Dell\Desktop\信息系统课设\新建文件夹\酒店管理系统\obj\
 C:\Users\Dell\Desktop\信息系统课设\新建文件夹\酒店管理系统\obj\Debug\酒店管理系统.csproj.GenerateResource.cache
 C:\Users\Dell\Desktop\信息系统课设\新建文件夹\酒店管理系统\obj\Debug\酒店管理系统.exe
 C:\Users\Dell\Desktop\信息系统课设\新建文件夹\酒店管理系统\obj\Debug\酒店管理系统.pdb
+F:\海事\temp\bin\Debug\酒店管理系统.exe.config
+F:\海事\temp\bin\Debug\酒店管理系统.exe
+F:\海事\temp\bin\Debug\酒店管理系统.pdb
+F:\海事\temp\obj\Debug\酒店管理系统.csprojAssemblyReference.cache
+F:\海事\temp\obj\Debug\酒店管理系统.Form1.resources
+F:\海事\temp\obj\Debug\酒店管理系统.Properties.Resources.resources
+F:\海事\temp\obj\Debug\酒店管理系统.csproj.GenerateResource.cache
+F:\海事\temp\obj\Debug\酒店管理系统.csproj.CoreCompileInputs.cache
+F:\海事\temp\obj\Debug\酒店管理系统.exe
+F:\海事\temp\obj\Debug\酒店管理系统.pdb

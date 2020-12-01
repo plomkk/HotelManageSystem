@@ -187,9 +187,9 @@
             this.tip.ForeColor = System.Drawing.Color.Red;
             this.tip.Location = new System.Drawing.Point(248, 205);
             this.tip.Name = "tip";
-            this.tip.Size = new System.Drawing.Size(269, 20);
+            this.tip.Size = new System.Drawing.Size(329, 20);
             this.tip.TabIndex = 10;
-            this.tip.Text = "无此账户或密码错误，请检查";
+            this.tip.Text = "无此账户或密码错误，请检查！！！";
             this.tip.Click += new System.EventHandler(this.tip_Click);
             // 
             // login_success
@@ -361,7 +361,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1379, 593);
+            this.ClientSize = new System.Drawing.Size(859, 593);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.register_panel);
             this.Controls.Add(this.label1);
