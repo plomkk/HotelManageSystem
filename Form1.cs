@@ -25,6 +25,7 @@ namespace 酒店管理系统
             InitializeComponent();
             tip.Hide();
             login_success.Hide();
+            panel1.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -125,6 +126,11 @@ namespace 酒店管理系统
         }
 
         private void tip_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void login_success_Paint(object sender, PaintEventArgs e)
         {
 
         }
