@@ -36,3 +36,6 @@ C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.Properties.Resources.r
 C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.csproj.GenerateResource.cache
 C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.exe
 C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.pdb
+C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.admin.resources
+C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.customer.resources
+C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.stage.resources
