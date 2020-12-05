@@ -53,8 +53,25 @@ namespace 酒店管理系统
             }
             else //成功登陆
             {
-                panel1.Hide();
-                login_success.Show();
+                if(iden=="customer")
+                {
+                    customer C = new customer();
+                    C.Show();
+                    this.Hide();
+                   
+                }
+                else if (iden == "stage")
+                {
+                    stage S = new stage();
+                    S.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    admin a = new admin();
+                    a.Show();
+                    this.Hide();
+                }
                 userid = id;
             }
         }
