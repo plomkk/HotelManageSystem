@@ -39,3 +39,4 @@ C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.pdb
 C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.admin.resources
 C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.customer.resources
 C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.stage.resources
+C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.顾客_查询订单.resources

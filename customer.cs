@@ -16,5 +16,12 @@ namespace 酒店管理系统
         {
             InitializeComponent();
         }
+
+        private void 功能1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            顾客_查询订单 C = new 顾客_查询订单();
+            C.Show();
+            this.Hide();
+        }
     }
 }

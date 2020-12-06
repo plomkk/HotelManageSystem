@@ -49,8 +49,9 @@
             // 功能1ToolStripMenuItem
             // 
             this.功能1ToolStripMenuItem.Name = "功能1ToolStripMenuItem";
-            this.功能1ToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
-            this.功能1ToolStripMenuItem.Text = "功能1";
+            this.功能1ToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
+            this.功能1ToolStripMenuItem.Text = "查询订单信息";
+            this.功能1ToolStripMenuItem.Click += new System.EventHandler(this.功能1ToolStripMenuItem_Click);
             // 
             // 功能2ToolStripMenuItem
             // 
