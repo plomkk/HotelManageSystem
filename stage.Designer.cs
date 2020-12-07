@@ -53,8 +53,9 @@
             // 功能1ToolStripMenuItem
             // 
             this.功能1ToolStripMenuItem.Name = "功能1ToolStripMenuItem";
-            this.功能1ToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
-            this.功能1ToolStripMenuItem.Text = "功能1";
+            this.功能1ToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
+            this.功能1ToolStripMenuItem.Text = "查询订单信息";
+            this.功能1ToolStripMenuItem.Click += new System.EventHandler(this.功能1ToolStripMenuItem_Click);
             // 
             // 功能2ToolStripMenuItem
             // 
@@ -82,7 +83,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "stage";
-            this.Text = "stage";
+            this.Text = "前台主界面";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

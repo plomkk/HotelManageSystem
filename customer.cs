@@ -19,7 +19,7 @@ namespace 酒店管理系统
 
         private void 功能1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            顾客_查询订单 C = new 顾客_查询订单();
+            顾客查询订单信息 C = new 顾客查询订单信息();
             C.Show();
             this.Hide();
         }
