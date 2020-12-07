@@ -64,5 +64,10 @@ namespace 酒店管理系统
                 MessageBox.Show("查询失败", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void 前台查询订单信息_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -56,8 +56,9 @@
             // 功能2ToolStripMenuItem
             // 
             this.功能2ToolStripMenuItem.Name = "功能2ToolStripMenuItem";
-            this.功能2ToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
-            this.功能2ToolStripMenuItem.Text = "功能2";
+            this.功能2ToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
+            this.功能2ToolStripMenuItem.Text = "修改订单信息";
+            this.功能2ToolStripMenuItem.Click += new System.EventHandler(this.功能2ToolStripMenuItem_Click);
             // 
             // customer
             // 

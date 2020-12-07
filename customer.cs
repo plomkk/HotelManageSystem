@@ -28,5 +28,12 @@ namespace 酒店管理系统
         {
 
         }
+
+        private void 功能2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            顾客修改订单信息 c = new 顾客修改订单信息();
+            c.Show();
+            this.Hide();
+        }
     }
 }
