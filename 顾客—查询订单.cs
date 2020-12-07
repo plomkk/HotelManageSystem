@@ -22,7 +22,7 @@ namespace 酒店管理系统
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
-            String strSQL = "Select* from [order] where [name1]='" + name.Text.Trim()+ "'and [id_name1]='" + id_number.Text.Trim() + "'"; 
+            String strSQL = "Select* from [order] where ([name1]='" + name.Text.Trim()+ "'and [id_name1]='" + id_number.Text.Trim() + "') or([name2]='" + name.Text.Trim() + "'and [id_name2]='" + id_number.Text.Trim() + "') or ([name3]='" + name.Text.Trim() + "'and [id_name3]='" + id_number.Text.Trim() + "')"; 
             SqlDataAdapter adp = new SqlDataAdapter(strSQL, conn);//建立一个数据适配器和数据集
             DataSet ds = new DataSet();
             adp.Fill(ds);//把查询的内容放入数据集中
@@ -44,19 +44,31 @@ namespace 酒店管理系统
             dataGridView1.Columns[14].HeaderText = "订单状态";
             if (ds.Tables[0].Rows.Count != 0)//如果查询到记录则显示
             {
-                MessageBox.Show("查询成功");
+                MessageBox.Show("查询成功", "提示", MessageBoxButtons.OK,MessageBoxIcon.Information);
                 SqlCommand comm = new SqlCommand(strSQL, conn);
                 conn.Close();
                
             }
             else//没有记录则查询失败
             {
-                MessageBox.Show("查询失败");
+                MessageBox.Show("查询失败","提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             
 
 
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {      
+            customer C = new customer();
+            C.Show();
+            this.Hide();
         }
     }
 }

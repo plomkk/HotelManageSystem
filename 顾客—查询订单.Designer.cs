@@ -34,12 +34,14 @@
             this.name = new System.Windows.Forms.TextBox();
             this.id_number = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(542, 67);
+            this.button1.Location = new System.Drawing.Point(265, 362);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 36);
             this.button1.TabIndex = 0;
@@ -50,31 +52,31 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(120, 67);
+            this.label1.Location = new System.Drawing.Point(188, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 15);
+            this.label1.Size = new System.Drawing.Size(37, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "姓名：";
+            this.label1.Text = "姓名";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(120, 116);
+            this.label2.Location = new System.Drawing.Point(188, 148);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 15);
+            this.label2.Size = new System.Drawing.Size(67, 15);
             this.label2.TabIndex = 2;
-            this.label2.Text = "身份证号：";
+            this.label2.Text = "身份证号";
             // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(252, 57);
+            this.name.Location = new System.Drawing.Point(306, 74);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(229, 25);
             this.name.TabIndex = 3;
             // 
             // id_number
             // 
-            this.id_number.Location = new System.Drawing.Point(252, 106);
+            this.id_number.Location = new System.Drawing.Point(306, 138);
             this.id_number.Name = "id_number";
             this.id_number.Size = new System.Drawing.Size(229, 25);
             this.id_number.TabIndex = 4;
@@ -82,18 +84,40 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(85, 191);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 207);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(532, 204);
+            this.dataGridView1.Size = new System.Drawing.Size(776, 115);
             this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(22, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(202, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "请输入您的姓名和身份证号：";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(398, 362);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(122, 35);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "返回上级界面";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // 顾客_查询订单
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.id_number);
             this.Controls.Add(this.name);
@@ -116,5 +140,7 @@
         private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.TextBox id_number;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
     }
 }

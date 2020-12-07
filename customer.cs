@@ -23,5 +23,10 @@ namespace 酒店管理系统
             C.Show();
             this.Hide();
         }
+
+        private void customer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
