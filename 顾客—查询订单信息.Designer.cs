@@ -171,6 +171,7 @@
             this.Controls.Add(this.button1);
             this.Name = "顾客查询订单信息";
             this.Text = "查询订单信息";
+            this.Load += new System.EventHandler(this.顾客查询订单信息_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -52,5 +52,10 @@ namespace 酒店管理系统
             stage s = new stage();
             s.Show();
         }
+
+        private void 前台线下预定_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

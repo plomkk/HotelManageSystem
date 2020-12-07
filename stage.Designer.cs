@@ -60,8 +60,9 @@
             // 功能2ToolStripMenuItem
             // 
             this.功能2ToolStripMenuItem.Name = "功能2ToolStripMenuItem";
-            this.功能2ToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
-            this.功能2ToolStripMenuItem.Text = "功能2";
+            this.功能2ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.功能2ToolStripMenuItem.Text = "线下预定";
+            this.功能2ToolStripMenuItem.Click += new System.EventHandler(this.功能2ToolStripMenuItem_Click);
             // 
             // 功能3ToolStripMenuItem
             // 
@@ -84,6 +85,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "stage";
             this.Text = "前台主界面";
+            this.Load += new System.EventHandler(this.stage_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

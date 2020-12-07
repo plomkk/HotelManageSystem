@@ -27,7 +27,7 @@ namespace 酒店管理系统
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-0GCTIPK\\MSSQLSERVER1;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
 
             String strSQL = "Select* from [order] where ([ID]='" + ID.Text.Trim() + "') and (([id_name1]='" + id_number.Text.Trim() + "') or([id_name2]='" + id_number.Text.Trim() + "') or ([id_name3]='" + id_number.Text.Trim()+ "'))";
@@ -66,6 +66,11 @@ namespace 酒店管理系统
         }
 
         private void 前台查询订单信息_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

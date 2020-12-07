@@ -355,6 +355,7 @@ namespace 酒店管理系统
             this.Controls.Add(this.label1);
             this.Name = "前台线下预定";
             this.Text = "前台线下预定";
+            this.Load += new System.EventHandler(this.前台线下预定_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

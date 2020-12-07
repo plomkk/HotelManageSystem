@@ -24,5 +24,17 @@ namespace 酒店管理系统
             this.Hide();
             
         }
+
+        private void 功能2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            前台线下预定 S = new 前台线下预定();
+            S.Show();
+            this.Hide();
+        }
+
+        private void stage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
