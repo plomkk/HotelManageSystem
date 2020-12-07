@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.功能1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.功能2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.线上预订ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,7 +40,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.功能1ToolStripMenuItem,
-            this.功能2ToolStripMenuItem});
+            this.功能2ToolStripMenuItem,
+            this.线上预订ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
@@ -59,6 +61,13 @@
             this.功能2ToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
             this.功能2ToolStripMenuItem.Text = "修改订单信息";
             this.功能2ToolStripMenuItem.Click += new System.EventHandler(this.功能2ToolStripMenuItem_Click);
+            // 
+            // 线上预订ToolStripMenuItem
+            // 
+            this.线上预订ToolStripMenuItem.Name = "线上预订ToolStripMenuItem";
+            this.线上预订ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.线上预订ToolStripMenuItem.Text = "线上预订";
+            this.线上预订ToolStripMenuItem.Click += new System.EventHandler(this.线上预订ToolStripMenuItem_Click);
             // 
             // customer
             // 
@@ -82,5 +91,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 功能1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 功能2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 线上预订ToolStripMenuItem;
     }
 }

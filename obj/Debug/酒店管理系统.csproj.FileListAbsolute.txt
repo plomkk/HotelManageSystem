@@ -59,3 +59,4 @@ C:\Users\54689\Desktop\课设更新\obj\Debug\酒店管理系统.csproj.Generate
 C:\Users\54689\Desktop\课设更新\obj\Debug\酒店管理系统.csproj.CoreCompileInputs.cache
 C:\Users\54689\Desktop\课设更新\obj\Debug\酒店管理系统.exe
 C:\Users\54689\Desktop\课设更新\obj\Debug\酒店管理系统.pdb
+C:\Users\54689\Desktop\课设更新\obj\Debug\酒店管理系统.顾客线上预订.resources

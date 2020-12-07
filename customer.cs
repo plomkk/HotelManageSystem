@@ -35,5 +35,12 @@ namespace 酒店管理系统
             c.Show();
             this.Hide();
         }
+
+        private void 线上预订ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            顾客线上预订 C = new 顾客线上预订();
+            C.Show();
+            this.Hide();
+        }
     }
 }
