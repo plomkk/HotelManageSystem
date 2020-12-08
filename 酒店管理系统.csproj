@@ -124,6 +124,9 @@
     <EmbeddedResource Include="admin.resx">
       <DependentUpon>admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Checkin.resx">
+      <DependentUpon>Checkin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="customer.resx">
       <DependentUpon>customer.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +142,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RoomInfo.resx">
+      <DependentUpon>RoomInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="stage.resx">
       <DependentUpon>stage.cs</DependentUpon>
     </EmbeddedResource>

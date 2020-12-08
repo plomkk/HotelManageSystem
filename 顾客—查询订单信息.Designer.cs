@@ -45,9 +45,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(619, 134);
+            this.button1.Location = new System.Drawing.Point(696, 161);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 36);
+            this.button1.Size = new System.Drawing.Size(84, 43);
             this.button1.TabIndex = 0;
             this.button1.Text = "查询2";
             this.button1.UseVisualStyleBackColor = true;
@@ -56,43 +57,46 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(231, 134);
+            this.label1.Location = new System.Drawing.Point(260, 161);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 15);
+            this.label1.Size = new System.Drawing.Size(44, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "姓名";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(231, 186);
+            this.label2.Location = new System.Drawing.Point(260, 223);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 15);
+            this.label2.Size = new System.Drawing.Size(80, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "身份证号";
             // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(341, 123);
+            this.name.Location = new System.Drawing.Point(384, 148);
+            this.name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(229, 25);
+            this.name.Size = new System.Drawing.Size(257, 28);
             this.name.TabIndex = 3;
             // 
             // id_number
             // 
-            this.id_number.Location = new System.Drawing.Point(341, 176);
+            this.id_number.Location = new System.Drawing.Point(384, 211);
+            this.id_number.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.id_number.Name = "id_number";
-            this.id_number.Size = new System.Drawing.Size(229, 25);
+            this.id_number.Size = new System.Drawing.Size(257, 28);
             this.id_number.TabIndex = 4;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 227);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 272);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 134);
+            this.dataGridView1.Size = new System.Drawing.Size(873, 161);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -100,17 +104,18 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(25, 134);
+            this.label3.Location = new System.Drawing.Point(28, 161);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 17);
+            this.label3.Size = new System.Drawing.Size(172, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "通过个人信息查询：";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(341, 385);
+            this.button2.Location = new System.Drawing.Point(384, 462);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 35);
+            this.button2.Size = new System.Drawing.Size(137, 42);
             this.button2.TabIndex = 7;
             this.button2.Text = "返回上级界面";
             this.button2.UseVisualStyleBackColor = true;
@@ -120,33 +125,36 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Location = new System.Drawing.Point(25, 45);
+            this.label4.Location = new System.Drawing.Point(28, 54);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 17);
+            this.label4.Size = new System.Drawing.Size(172, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "通过订单编号查询：";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(222, 47);
+            this.label5.Location = new System.Drawing.Point(250, 56);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 15);
+            this.label5.Size = new System.Drawing.Size(80, 18);
             this.label5.TabIndex = 9;
             this.label5.Text = "订单编号";
             // 
             // ID
             // 
-            this.ID.Location = new System.Drawing.Point(341, 37);
+            this.ID.Location = new System.Drawing.Point(384, 44);
+            this.ID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(229, 25);
+            this.ID.Size = new System.Drawing.Size(257, 28);
             this.ID.TabIndex = 10;
+            this.ID.TextChanged += new System.EventHandler(this.ID_TextChanged);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(619, 30);
+            this.button3.Location = new System.Drawing.Point(696, 36);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 34);
+            this.button3.Size = new System.Drawing.Size(84, 41);
             this.button3.TabIndex = 11;
             this.button3.Text = "查询1";
             this.button3.UseVisualStyleBackColor = true;
@@ -154,9 +162,9 @@
             // 
             // 顾客查询订单信息
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 540);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.ID);
             this.Controls.Add(this.label5);
@@ -169,6 +177,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "顾客查询订单信息";
             this.Text = "查询订单信息";
             this.Load += new System.EventHandler(this.顾客查询订单信息_Load);

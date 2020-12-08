@@ -78,3 +78,5 @@ C:\Users\baby_\Source\Repos\plomkk\HotelManageSystem\obj\Debug\酒店管理系�
 C:\Users\baby_\Source\Repos\plomkk\HotelManageSystem\obj\Debug\酒店管理系统.csproj.CoreCompileInputs.cache
 C:\Users\baby_\Source\Repos\plomkk\HotelManageSystem\obj\Debug\酒店管理系统.exe
 C:\Users\baby_\Source\Repos\plomkk\HotelManageSystem\obj\Debug\酒店管理系统.pdb
+C:\Users\baby_\Source\Repos\plomkk\HotelManageSystem\obj\Debug\酒店管理系统.RoomInfo.resources
+C:\Users\baby_\Source\Repos\plomkk\HotelManageSystem\obj\Debug\酒店管理系统.Checkin.resources

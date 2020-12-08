@@ -78,7 +78,7 @@ namespace 酒店管理系统
 
         private void button3_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-0GCTIPK\\MSSQLSERVER1;Initial Catalog=Hotel;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-RD7CTBN;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
             String strSQL = "Select* from [order] where [ID]='" + ID.Text.Trim() + "'";
             SqlDataAdapter adp = new SqlDataAdapter(strSQL, conn);//建立一个数据适配器和数据集
@@ -114,6 +114,11 @@ namespace 酒店管理系统
         }
 
         private void 顾客查询订单信息_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ID_TextChanged(object sender, EventArgs e)
         {
 
         }

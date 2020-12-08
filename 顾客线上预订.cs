@@ -37,5 +37,10 @@ namespace 酒店管理系统
             stage s = new stage();
             s.Show();
         }
+
+        private void id_name1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
