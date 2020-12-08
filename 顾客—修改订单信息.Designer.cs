@@ -275,7 +275,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 32);
             this.button2.TabIndex = 25;
-            this.button2.Text = "确认";
+            this.button2.Text = "修改";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -286,7 +286,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(397, 15);
             this.label13.TabIndex = 26;
-            this.label13.Text = "·请在下方重新输入修改后的订单信息，点击“确认”按钮";
+            this.label13.Text = "·请在下方重新输入修改后的订单信息，点击“修改”按钮";
             // 
             // button3
             // 

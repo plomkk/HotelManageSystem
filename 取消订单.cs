@@ -11,31 +11,65 @@ using System.Windows.Forms;
 
 namespace 酒店管理系统
 {
-    public partial class 前台查询订单信息 : Form
+    public partial class 取消订单 : Form
     {
-        public 前台查询订单信息()
+        int flag;
+        public 取消订单(int f)
         {
             InitializeComponent();
+            flag = f;
+        }
+
+        private void 取消订单_Load(object sender, EventArgs e)
+        {
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            stage s = new stage();
-            s.Show();
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-0GCTIPK\\MSSQLSERVER1;Initial Catalog=Hotel;Integrated Security=True");
+            conn.Open();
+            DialogResult dr = MessageBox.Show("确定删除此订单？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                string sql = "delete from [order] where [ID]='" + dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim() + "'";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("已成功删除所选订单，预订取消成功！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                this.Show();
+            }
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True");
-            conn.Open();
+            if (flag == 1)
+            {
+                this.Close();
+                stage s = new stage();
+                s.Show();
+            }
+            else
+            {
+                this.Close();
+                customer c = new customer();
+                c.Show();
+            }
+        }
 
-            String strSQL = "Select* from [order] where ([ID]='" + ID.Text.Trim() + "') and (([id_name1]='" + id_number.Text.Trim() + "') or([id_name2]='" + id_number.Text.Trim() + "') or ([id_name3]='" + id_number.Text.Trim()+ "'))";
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-0GCTIPK\\MSSQLSERVER1;Initial Catalog=Hotel;Integrated Security=True");
+            conn.Open();
+            String strSQL = "Select* from [order] where ([id_name1]='" + id_name.Text.Trim() + "'or[id_name2]='" + id_name.Text.Trim() + "'or [id_name3]='" + id_name.Text.Trim() + "')";
             SqlDataAdapter adp = new SqlDataAdapter(strSQL, conn);//建立一个数据适配器和数据集
             DataSet ds = new DataSet();
             adp.Fill(ds);//把查询的内容放入数据集中
-
-
             dataGridView1.DataSource = ds.Tables[0];
             dataGridView1.Columns[0].HeaderText = "订单编号";
             dataGridView1.Columns[1].HeaderText = "顾客1";
@@ -65,14 +99,11 @@ namespace 酒店管理系统
             }
         }
 
-        private void 前台查询订单信息_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+       
     }
 }

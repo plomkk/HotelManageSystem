@@ -27,7 +27,7 @@ namespace 酒店管理系统
 
         private void 功能2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            前台线下预定 S = new 前台线下预定();
+            客房预定 S = new 客房预定(1);
             S.Show();
             this.Hide();
         }
@@ -44,7 +44,9 @@ namespace 酒店管理系统
 
         private void 功能3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            取消订单 A = new 取消订单(1);
+            A.Show();
+            this.Hide();
         }
 
         private void RoomInfo_Click(object sender, EventArgs e)
@@ -66,6 +68,13 @@ namespace 酒店管理系统
             CheckOut checkout = new CheckOut();
             checkout.Show();
             this.Hide();
+        }
+
+        private void 功能4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            前台修改订单信息 s = new 前台修改订单信息();
+            this.Hide();
+            s.Show();
         }
     }
 }
