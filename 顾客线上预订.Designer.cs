@@ -72,7 +72,7 @@ namespace 酒店管理系统
             // 
             // ID
             // 
-            this.ID.Location = new System.Drawing.Point(121, 35);
+            this.ID.Location = new System.Drawing.Point(112, 28);
             this.ID.Name = "ID";
             this.ID.Size = new System.Drawing.Size(193, 25);
             this.ID.TabIndex = 14;
@@ -80,7 +80,7 @@ namespace 酒店管理系统
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 121);
+            this.label2.Location = new System.Drawing.Point(48, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 15);
             this.label2.TabIndex = 15;
@@ -106,7 +106,7 @@ namespace 酒店管理系统
             // 
             // name1
             // 
-            this.name1.Location = new System.Drawing.Point(121, 118);
+            this.name1.Location = new System.Drawing.Point(121, 121);
             this.name1.Name = "name1";
             this.name1.Size = new System.Drawing.Size(162, 25);
             this.name1.TabIndex = 18;
@@ -296,7 +296,7 @@ namespace 酒店管理系统
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(286, 492);
+            this.button1.Location = new System.Drawing.Point(380, 467);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 36);
             this.button1.TabIndex = 41;
@@ -306,7 +306,7 @@ namespace 酒店管理系统
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(692, 492);
+            this.button2.Location = new System.Drawing.Point(640, 467);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(80, 36);
             this.button2.TabIndex = 42;
@@ -351,6 +351,7 @@ namespace 酒店管理系统
             this.Controls.Add(this.label1);
             this.Name = "顾客线上预订";
             this.Text = "顾客线上预订";
+            this.Load += new System.EventHandler(this.顾客线上预订_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

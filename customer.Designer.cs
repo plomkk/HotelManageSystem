@@ -66,7 +66,7 @@
             // 
             this.线上预订ToolStripMenuItem.Name = "线上预订ToolStripMenuItem";
             this.线上预订ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
-            this.线上预订ToolStripMenuItem.Text = "线上预订";
+            this.线上预订ToolStripMenuItem.Text = "客房预订";
             this.线上预订ToolStripMenuItem.Click += new System.EventHandler(this.线上预订ToolStripMenuItem_Click);
             // 
             // customer

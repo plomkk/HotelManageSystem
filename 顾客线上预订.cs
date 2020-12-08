@@ -37,5 +37,10 @@ namespace 酒店管理系统
             stage s = new stage();
             s.Show();
         }
+
+        private void 顾客线上预订_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

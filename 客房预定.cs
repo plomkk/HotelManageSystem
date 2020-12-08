@@ -11,11 +11,14 @@ using System.Windows.Forms;
 
 namespace 酒店管理系统
 {
-    public partial class 前台线下预定 : Form
+    public partial class 客房预定 : Form
     {
-        public 前台线下预定()
+        int flag;
+        public 客房预定(int f)
         {
             InitializeComponent();
+            flag = f;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -99,7 +102,9 @@ namespace 酒店管理系统
                     cmd.ExecuteNonQuery();
                 }
             }
-            catch { }
+            catch 
+            { 
+            }
             
         }
         private void label14_Click(object sender, EventArgs e)
@@ -108,9 +113,18 @@ namespace 酒店管理系统
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
-            stage s = new stage();
-            s.Show();
+            if(flag==1)
+            {
+                this.Close();
+                stage s = new stage();
+                s.Show();
+            }
+            else
+            {
+                this.Close();
+                customer c = new customer();
+                c.Show();
+            }
         }
 
         private void 前台线下预定_Load(object sender, EventArgs e)

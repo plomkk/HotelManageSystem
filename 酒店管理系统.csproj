@@ -97,11 +97,11 @@
     <Compile Include="前台—查询订单信息.Designer.cs">
       <DependentUpon>前台—查询订单信息.cs</DependentUpon>
     </Compile>
-    <Compile Include="前台线下预定.cs">
+    <Compile Include="客房预定.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="前台线下预定.designer.cs">
-      <DependentUpon>前台线下预定.cs</DependentUpon>
+    <Compile Include="客房预定.designer.cs">
+      <DependentUpon>客房预定.cs</DependentUpon>
     </Compile>
     <Compile Include="顾客—修改订单信息.cs">
       <SubType>Form</SubType>
@@ -145,8 +145,8 @@
     <EmbeddedResource Include="前台—查询订单信息.resx">
       <DependentUpon>前台—查询订单信息.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="前台线下预定.resx">
-      <DependentUpon>前台线下预定.cs</DependentUpon>
+    <EmbeddedResource Include="客房预定.resx">
+      <DependentUpon>客房预定.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="顾客—修改订单信息.resx">
       <DependentUpon>顾客—修改订单信息.cs</DependentUpon>

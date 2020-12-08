@@ -1,7 +1,7 @@
 ﻿
 namespace 酒店管理系统
 {
-    partial class 前台线下预定
+    partial class 客房预定
     {
         /// <summary>
         /// Required designer variable.
@@ -298,7 +298,7 @@ namespace 酒店管理系统
             this.label8.TabIndex = 38;
             this.label8.Text = "label8";
             // 
-            // 前台线下预定
+            // 客房预定
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -329,8 +329,8 @@ namespace 酒店管理系统
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "前台线下预定";
-            this.Text = "前台线下预定";
+            this.Name = "客房预定";
+            this.Text = "客房预定";
             this.Load += new System.EventHandler(this.前台线下预定_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

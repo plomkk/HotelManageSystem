@@ -38,8 +38,8 @@ namespace 酒店管理系统
 
         private void 线上预订ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            顾客线上预订 C = new 顾客线上预订();
-            C.Show();
+            客房预定 S = new 客房预定(0);
+            S.Show();
             this.Hide();
         }
     }

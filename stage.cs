@@ -27,7 +27,7 @@ namespace 酒店管理系统
 
         private void 功能2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            前台线下预定 S = new 前台线下预定();
+            客房预定 S = new 客房预定(1);
             S.Show();
             this.Hide();
         }

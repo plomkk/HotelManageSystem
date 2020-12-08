@@ -34,14 +34,13 @@
             this.功能3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.功能4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RoomInfo = new System.Windows.Forms.ToolStripMenuItem();
-            this.CheckOut = new System.Windows.Forms.ToolStripMenuItem();
             this.Checkin = new System.Windows.Forms.ToolStripMenuItem();
+            this.CheckOut = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.功能1ToolStripMenuItem,
@@ -53,67 +52,65 @@
             this.CheckOut});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(900, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 功能1ToolStripMenuItem
             // 
             this.功能1ToolStripMenuItem.Name = "功能1ToolStripMenuItem";
-            this.功能1ToolStripMenuItem.Size = new System.Drawing.Size(134, 28);
+            this.功能1ToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
             this.功能1ToolStripMenuItem.Text = "查询订单信息";
             this.功能1ToolStripMenuItem.Click += new System.EventHandler(this.功能1ToolStripMenuItem_Click);
             // 
             // 功能2ToolStripMenuItem
             // 
             this.功能2ToolStripMenuItem.Name = "功能2ToolStripMenuItem";
-            this.功能2ToolStripMenuItem.Size = new System.Drawing.Size(98, 28);
-            this.功能2ToolStripMenuItem.Text = "线下预定";
+            this.功能2ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.功能2ToolStripMenuItem.Text = "客房预定";
             this.功能2ToolStripMenuItem.Click += new System.EventHandler(this.功能2ToolStripMenuItem_Click);
             // 
             // 功能3ToolStripMenuItem
             // 
             this.功能3ToolStripMenuItem.Name = "功能3ToolStripMenuItem";
-            this.功能3ToolStripMenuItem.Size = new System.Drawing.Size(73, 28);
+            this.功能3ToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.功能3ToolStripMenuItem.Text = "功能3";
             this.功能3ToolStripMenuItem.Click += new System.EventHandler(this.功能3ToolStripMenuItem_Click);
             // 
             // 功能4ToolStripMenuItem
             // 
             this.功能4ToolStripMenuItem.Name = "功能4ToolStripMenuItem";
-            this.功能4ToolStripMenuItem.Size = new System.Drawing.Size(73, 28);
+            this.功能4ToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.功能4ToolStripMenuItem.Text = "功能4";
             // 
             // RoomInfo
             // 
             this.RoomInfo.Name = "RoomInfo";
-            this.RoomInfo.Size = new System.Drawing.Size(134, 28);
+            this.RoomInfo.Size = new System.Drawing.Size(113, 24);
             this.RoomInfo.Text = "查询房间信息";
             this.RoomInfo.Click += new System.EventHandler(this.RoomInfo_Click);
-            // 
-            // CheckOut
-            // 
-            this.CheckOut.Name = "CheckOut";
-            this.CheckOut.Size = new System.Drawing.Size(134, 28);
-            this.CheckOut.Text = "办理退房手续";
-            this.CheckOut.Click += new System.EventHandler(this.CheckOut_Click);
             // 
             // Checkin
             // 
             this.Checkin.Name = "Checkin";
-            this.Checkin.Size = new System.Drawing.Size(134, 28);
+            this.Checkin.Size = new System.Drawing.Size(113, 24);
             this.Checkin.Text = "办理入住手续";
             this.Checkin.Click += new System.EventHandler(this.Checkin_Click);
             // 
+            // CheckOut
+            // 
+            this.CheckOut.Name = "CheckOut";
+            this.CheckOut.Size = new System.Drawing.Size(113, 24);
+            this.CheckOut.Text = "办理退房手续";
+            this.CheckOut.Click += new System.EventHandler(this.CheckOut_Click);
+            // 
             // stage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 540);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "stage";
             this.Text = "前台主界面";
             this.Load += new System.EventHandler(this.stage_Load);
