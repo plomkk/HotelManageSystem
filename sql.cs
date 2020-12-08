@@ -11,7 +11,7 @@ namespace 酒店管理系统
     class SQL
         
     {
-        private string sqlstr = "Data Source=DESKTOP-0GCTIPK\\MSSQLSERVER1;Initial Catalog=Hotel;Integrated Security=True";
+        private string sqlstr = "Data Source=DESKTOP-RD7CTBN;Initial Catalog=Hotel;Integrated Security=True";
         //连接字符串连接数据库   https://www.csdn.net/gather_2e/MtTaYg2sMjMxLWJsb2cO0O0O.html
         private SqlConnection con;  //https://blog.csdn.net/susan19890313/article/details/6980393
         private SqlCommand cmd;  //https://blog.csdn.net/feiduan1211/article/details/81541477

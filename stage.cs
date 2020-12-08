@@ -36,5 +36,36 @@ namespace 酒店管理系统
         {
 
         }
+
+        private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 功能3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RoomInfo_Click(object sender, EventArgs e)
+        {
+            RoomInfo Room = new RoomInfo();
+            Room.Show();
+            this.Hide();
+        }
+
+        private void Checkin_Click(object sender, EventArgs e)
+        {
+            Checkin checkin = new Checkin();
+            checkin.Show();
+            this.Hide();
+        }
+
+        private void CheckOut_Click(object sender, EventArgs e)
+        {
+            CheckOut checkout = new CheckOut();
+            checkout.Show();
+            this.Hide();
+        }
     }
 }
