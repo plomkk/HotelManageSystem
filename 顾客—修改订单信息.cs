@@ -56,43 +56,47 @@ namespace 酒店管理系统
 
             try
             {
-                String strSQL = "Select* from [order] where [ID]='" + id_order.Text.Trim() + "'";
-                SqlDataAdapter adp = new SqlDataAdapter(strSQL, mycon);//建立一个数据适配器和数据集
-                DataSet ds = new DataSet();
-                adp.Fill(ds);//把查询的内容放入数据集中
-                if (ds.Tables[0].Rows.Count != 0)//如果在order表中查询到该订单编号
+                DialogResult dr = MessageBox.Show("确定修改此订单？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
                 {
-                    string sql1 = "update [order] set [ID]='" + id_order.Text.Trim() + "',[name1]='" + name1.Text.Trim() + "',[name2]='" + name2.Text.Trim() + "',[name3]='" + name3.Text.Trim() + "',[id_name1]='" + id_number1.Text.Trim() + "',[id_name2]='" + id_number2.Text.Trim() + "',[id_name3]='" + id_number3.Text.Trim() + "',[type_room]='" + type.Text.Trim() + "',[phonenumber]='" + phonenumber.Text.Trim() + "',[checkin_date]='" + checkin_date.Text.Trim() + "',[checkout_date]='" + checkout_date.Text.Trim() + "',[numberofdays]='" + Int32.Parse(numberofdays.Text.Trim()) + "'";
-                    SqlCommand cmd = new SqlCommand(sql1, sqlConnection);
-                    cmd.CommandText = sql1;
-                    cmd.ExecuteNonQuery();
 
-                    int numberofday = Int32.Parse(numberofdays.Text);
-                    int totalmoney;
-
-                    if (type.Text.Trim() == "单人房")
+                    String strSQL = "Select* from [order] where [ID]='" + id_order.Text.Trim() + "'";
+                    SqlDataAdapter adp = new SqlDataAdapter(strSQL, mycon);//建立一个数据适配器和数据集
+                    DataSet ds = new DataSet();
+                    adp.Fill(ds);//把查询的内容放入数据集中
+                    if (ds.Tables[0].Rows.Count != 0)//如果在order表中查询到该订单编号
                     {
-                        totalmoney = 330 * numberofday;
-                        MessageBox.Show("订单修改成功！您修改后的订单金额为" + totalmoney + "元", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        String sql2 = "update [order] set [price]='" +totalmoney + "' where [ID]='" + id_order.Text.Trim() + "'";
-                        SqlCommand cmd2 = new SqlCommand(sql2, sqlConnection);
-                        cmd.CommandText = sql2;
+                        string sql1 = "update [order] set [ID]='" + id_order.Text.Trim() + "',[name1]='" + name1.Text.Trim() + "',[name2]='" + name2.Text.Trim() + "',[name3]='" + name3.Text.Trim() + "',[id_name1]='" + id_number1.Text.Trim() + "',[id_name2]='" + id_number2.Text.Trim() + "',[id_name3]='" + id_number3.Text.Trim() + "',[type_room]='" + type.Text.Trim() + "',[phonenumber]='" + phonenumber.Text.Trim() + "',[checkin_date]='" + checkin_date.Text.Trim() + "',[checkout_date]='" + checkout_date.Text.Trim() + "',[numberofdays]='" + Int32.Parse(numberofdays.Text.Trim()) + "'";
+                        SqlCommand cmd = new SqlCommand(sql1, sqlConnection);
+                        cmd.CommandText = sql1;
                         cmd.ExecuteNonQuery();
 
-                    }
-                    else if (type.Text.Trim() == "双人房")
-                    {
-                        totalmoney = 440 * numberofday;
-                        String sql2 = "update [order] set [price]='" + totalmoney + "' where [ID]='" + id_order.Text.Trim() + "'";
-                        SqlCommand cmd2 = new SqlCommand(sql2, sqlConnection);
-                        cmd.CommandText = sql2;
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("订单修改成功！您修改后的订单金额为" + totalmoney + "元", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int numberofday = Int32.Parse(numberofdays.Text);
+                        int totalmoney;
 
-                    }
-                    else if (type.Text.Trim() == "三人房")
-                    {
+                        if (type.Text.Trim() == "单人房")
+                        {
+                            totalmoney = 330 * numberofday;
+                            MessageBox.Show("订单修改成功！您修改后的订单金额为" + totalmoney + "元", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            String sql2 = "update [order] set [price]='" + totalmoney + "' where [ID]='" + id_order.Text.Trim() + "'";
+                            SqlCommand cmd2 = new SqlCommand(sql2, sqlConnection);
+                            cmd.CommandText = sql2;
+                            cmd.ExecuteNonQuery();
+
+                        }
+                        else if (type.Text.Trim() == "双人房")
+                        {
+                            totalmoney = 440 * numberofday;
+                            String sql2 = "update [order] set [price]='" + totalmoney + "' where [ID]='" + id_order.Text.Trim() + "'";
+                            SqlCommand cmd2 = new SqlCommand(sql2, sqlConnection);
+                            cmd.CommandText = sql2;
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("订单修改成功！您修改后的订单金额为" + totalmoney + "元", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        }
+                        else if (type.Text.Trim() == "三人房")
+                        {
                             totalmoney = 550 * numberofday;
                             String sql2 = "update [order] set [price]='" + totalmoney + "' where [ID]='" + id_order.Text.Trim() + "'";
                             SqlCommand cmd2 = new SqlCommand(sql2, sqlConnection);
@@ -100,42 +104,47 @@ namespace 酒店管理系统
                             cmd.ExecuteNonQuery();
                             MessageBox.Show("订单修改成功！您修改后的订单金额为" + totalmoney + "元", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    }
-                    else if (type.Text.Trim() == "豪华套房")
-                    {
-                        totalmoney = 660 * numberofday;
-                        String sql2 = "update [order] set [price]='" + totalmoney + "' where [ID]='" + id_order.Text.Trim() + "'";
-                        SqlCommand cmd2 = new SqlCommand(sql2, sqlConnection);
-                        cmd.CommandText = sql2;
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("订单修改成功！您修改后的订单金额为" + totalmoney + "元", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else if (type.Text.Trim() == "豪华套房")
+                        {
+                            totalmoney = 660 * numberofday;
+                            String sql2 = "update [order] set [price]='" + totalmoney + "' where [ID]='" + id_order.Text.Trim() + "'";
+                            SqlCommand cmd2 = new SqlCommand(sql2, sqlConnection);
+                            cmd.CommandText = sql2;
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("订单修改成功！您修改后的订单金额为" + totalmoney + "元", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    }
-                    else if (type.Text.Trim() == "蜜月套房")
-                    {
-                        totalmoney = 990 * numberofday;
-                        String sql2 = "update [order] set [price]='" + totalmoney + "' where [ID]='" + id_order.Text.Trim() + "'";
-                        SqlCommand cmd2 = new SqlCommand(sql2, sqlConnection);
-                        cmd.CommandText = sql2;
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("订单修改成功！您修改后的订单金额为" + totalmoney + "元", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else if (type.Text.Trim() == "蜜月套房")
+                        {
+                            totalmoney = 990 * numberofday;
+                            String sql2 = "update [order] set [price]='" + totalmoney + "' where [ID]='" + id_order.Text.Trim() + "'";
+                            SqlCommand cmd2 = new SqlCommand(sql2, sqlConnection);
+                            cmd.CommandText = sql2;
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("订单修改成功！您修改后的订单金额为" + totalmoney + "元", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    }
-                    else if (type.Text.Trim() == "商务套房")
-                    {
-                        totalmoney = 880 * numberofday;
-                        String sql2 = "update [order] set [price]='" + totalmoney + "' where [ID]='" + id_order.Text.Trim() + "'";
-                        SqlCommand cmd2 = new SqlCommand(sql2, sqlConnection);
-                        cmd.CommandText = sql2;
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("订单修改成功！您修改后的订单金额为" + totalmoney + "元", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else if (type.Text.Trim() == "商务套房")
+                        {
+                            totalmoney = 880 * numberofday;
+                            String sql2 = "update [order] set [price]='" + totalmoney + "' where [ID]='" + id_order.Text.Trim() + "'";
+                            SqlCommand cmd2 = new SqlCommand(sql2, sqlConnection);
+                            cmd.CommandText = sql2;
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("订单修改成功！您修改后的订单金额为" + totalmoney + "元", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("订单编号输入错误，请您输入正确的订单编号", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        id_order.Clear();
                     }
                 }
                 else
                 {
-                    MessageBox.Show("订单编号输入错误，请您输入正确的订单编号", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    id_order.Clear();
+                    this.Show();
                 }
             }
             catch (SqlException) { }
