@@ -44,7 +44,9 @@ namespace 酒店管理系统
 
         private void 功能3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            取消订单 A = new 取消订单(1);
+            A.Show();
+            this.Hide();
         }
 
         private void RoomInfo_Click(object sender, EventArgs e)

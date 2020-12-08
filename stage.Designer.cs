@@ -67,14 +67,14 @@
             // 
             this.功能2ToolStripMenuItem.Name = "功能2ToolStripMenuItem";
             this.功能2ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
-            this.功能2ToolStripMenuItem.Text = "客房预定";
+            this.功能2ToolStripMenuItem.Text = "客房预订";
             this.功能2ToolStripMenuItem.Click += new System.EventHandler(this.功能2ToolStripMenuItem_Click);
             // 
             // 功能3ToolStripMenuItem
             // 
             this.功能3ToolStripMenuItem.Name = "功能3ToolStripMenuItem";
-            this.功能3ToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
-            this.功能3ToolStripMenuItem.Text = "功能3";
+            this.功能3ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.功能3ToolStripMenuItem.Text = "取消订单";
             this.功能3ToolStripMenuItem.Click += new System.EventHandler(this.功能3ToolStripMenuItem_Click);
             // 
             // 功能4ToolStripMenuItem

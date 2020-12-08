@@ -42,5 +42,12 @@ namespace 酒店管理系统
             S.Show();
             this.Hide();
         }
+
+        private void 取消预订ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            取消订单 A = new 取消订单(1);
+            A.Show();
+            this.Hide();
+        }
     }
 }
