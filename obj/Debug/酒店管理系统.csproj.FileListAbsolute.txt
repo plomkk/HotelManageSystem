@@ -96,3 +96,5 @@ C:\Users\54689\Desktop\课设更新22\obj\Debug\酒店管理系统.csproj.CoreCo
 C:\Users\54689\Desktop\课设更新22\obj\Debug\酒店管理系统.exe
 C:\Users\54689\Desktop\课设更新22\obj\Debug\酒店管理系统.pdb
 C:\Users\54689\Desktop\课设更新22\obj\Debug\酒店管理系统.客房预定.resources
+C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.前台修改订单信息.resources
+C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.客房预定.resources

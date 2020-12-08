@@ -80,8 +80,9 @@
             // 功能4ToolStripMenuItem
             // 
             this.功能4ToolStripMenuItem.Name = "功能4ToolStripMenuItem";
-            this.功能4ToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
-            this.功能4ToolStripMenuItem.Text = "功能4";
+            this.功能4ToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
+            this.功能4ToolStripMenuItem.Text = "修改订单信息";
+            this.功能4ToolStripMenuItem.Click += new System.EventHandler(this.功能4ToolStripMenuItem_Click);
             // 
             // RoomInfo
             // 

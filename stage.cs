@@ -67,5 +67,12 @@ namespace 酒店管理系统
             checkout.Show();
             this.Hide();
         }
+
+        private void 功能4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            前台修改订单信息 s = new 前台修改订单信息();
+            this.Hide();
+            s.Show();
+        }
     }
 }
