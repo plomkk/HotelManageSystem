@@ -64,7 +64,7 @@ namespace 酒店管理系统
 
         private void button4_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-0GCTIPK\\MSSQLSERVER1;Initial Catalog=Hotel;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
             String strSQL = "Select* from [order] where ([id_name1]='" + id_name.Text.Trim() + "'or[id_name2]='" + id_name.Text.Trim() + "'or [id_name3]='" + id_name.Text.Trim() + "')";
             SqlDataAdapter adp = new SqlDataAdapter(strSQL, conn);//建立一个数据适配器和数据集

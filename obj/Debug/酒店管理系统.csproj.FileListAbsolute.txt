@@ -99,3 +99,6 @@ C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.客房预定.resources
 C:\Users\54689\Desktop\课设更新\obj\Debug\酒店管理系统.前台修改订单信息.resources
 C:\Users\54689\Desktop\课设更新\obj\Debug\酒店管理系统.取消订单.resources
 C:\Users\54689\Desktop\课设更新\obj\Debug\酒店管理系统.客房预定.resources
+C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.Checkin.resources
+C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.RoomInfo.resources
+C:\Users\Dell\Desktop\课设\obj\Debug\酒店管理系统.取消订单.resources
