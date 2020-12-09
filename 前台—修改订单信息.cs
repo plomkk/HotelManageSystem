@@ -140,7 +140,7 @@ namespace 酒店管理系统
                     }
                 }
             }
-            catch (SqlException) { }
+            catch { }
 
 
 

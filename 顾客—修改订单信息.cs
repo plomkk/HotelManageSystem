@@ -147,7 +147,7 @@ namespace 酒店管理系统
                     this.Show();
                 }
             }
-            catch (SqlException) { }
+            catch  { }
 
         }
 

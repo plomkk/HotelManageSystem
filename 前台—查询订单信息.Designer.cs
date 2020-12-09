@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.id_number = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -49,19 +50,9 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(54, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(294, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "请在下方输入顾客的订单编号和身份证号：";
-            // 
             // ID
             // 
-            this.ID.Location = new System.Drawing.Point(285, 87);
+            this.ID.Location = new System.Drawing.Point(410, 31);
             this.ID.Name = "ID";
             this.ID.Size = new System.Drawing.Size(203, 25);
             this.ID.TabIndex = 2;
@@ -69,7 +60,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(162, 97);
+            this.label2.Location = new System.Drawing.Point(288, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 15);
             this.label2.TabIndex = 3;
@@ -77,7 +68,7 @@
             // 
             // id_number
             // 
-            this.id_number.Location = new System.Drawing.Point(285, 146);
+            this.id_number.Location = new System.Drawing.Point(410, 82);
             this.id_number.Name = "id_number";
             this.id_number.Size = new System.Drawing.Size(203, 25);
             this.id_number.TabIndex = 4;
@@ -96,7 +87,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(162, 156);
+            this.label3.Location = new System.Drawing.Point(288, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 15);
             this.label3.TabIndex = 6;
@@ -112,37 +103,47 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.ID);
+            this.groupBox1.Controls.Add(this.id_number);
+            this.groupBox1.Location = new System.Drawing.Point(12, 46);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(776, 123);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "请在下方输入顾客的订单编号和身份证号：";
+            // 
             // 前台查询订单信息
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.id_number);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.ID);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "前台查询订单信息";
             this.Text = "前台_查询订单信息";
             this.Load += new System.EventHandler(this.前台查询订单信息_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox ID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox id_number;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
