@@ -122,5 +122,10 @@ namespace 酒店管理系统
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
