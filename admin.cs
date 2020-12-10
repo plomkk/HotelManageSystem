@@ -16,5 +16,17 @@ namespace 酒店管理系统
         {
             InitializeComponent();
         }
+
+        private void admin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 功能1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Earnings earnings = new Earnings();
+            earnings.Show();
+            this.Hide();
+        }
     }
 }

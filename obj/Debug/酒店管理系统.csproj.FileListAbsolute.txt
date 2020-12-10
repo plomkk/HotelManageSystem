@@ -106,3 +106,4 @@ C:\Users\baby_\Source\Repos\plomkk\HotelManageSystem\obj\Debug\酒店管理系�
 C:\Users\baby_\Source\Repos\plomkk\HotelManageSystem\obj\Debug\酒店管理系统.取消订单.resources
 C:\Users\baby_\Source\Repos\plomkk\HotelManageSystem\obj\Debug\酒店管理系统.客房预定.resources
 C:\Users\baby_\Source\Repos\plomkk\HotelManageSystem\obj\Debug\酒店管理系统.CheckOut.resources
+C:\Users\baby_\Source\Repos\plomkk\HotelManageSystem\obj\Debug\酒店管理系统.Earnings.resources

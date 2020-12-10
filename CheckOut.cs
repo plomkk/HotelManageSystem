@@ -21,24 +21,7 @@ namespace 酒店管理系统
       
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView1.Columns[e.ColumnIndex].Name == "btnModify")
-            {
-                DataGridViewColumn column = dataGridView1.Columns[e.ColumnIndex];
-                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-RD7CTBN;Initial Catalog=Hotel;Integrated Security=True");
-                conn.Open();
-                String strSQL = "Update [order] Set state='未入住'";
-                SqlCommand cmdUpdate = new SqlCommand(strSQL, conn);
-                int result = cmdUpdate.ExecuteNonQuery();
-                if (result == 1)
-                {
-                    Console.WriteLine("更新记录操作成功");
-                    MessageBox.Show("已成功退房");
-                }
-                else
-                {
-                    Console.WriteLine("更新记录操作失败");
-                }
-            }
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -50,7 +33,7 @@ namespace 酒店管理系统
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-RD7CTBN;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
-            String sql1 = "update [order] set [state]='已入住' where [id_room]="+textBox1.Text.Trim();
+            String sql1 = "update [order] set [state]='已' where [id_room]="+textBox1.Text.Trim();
             String sql2= "update [room] set [state]='可用'where [ID]=" + textBox1.Text.Trim();
             SqlCommand cmd1 = new SqlCommand(sql1, conn);
             SqlCommand cmd2 = new SqlCommand(sql2, conn);
