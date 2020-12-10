@@ -59,6 +59,7 @@
             this.menuStrip2.Size = new System.Drawing.Size(900, 32);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
+            this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
             // 
             // 功能1ToolStripMenuItem
             // 
@@ -83,7 +84,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "admin";
-            this.Text = "admin";
+            this.Text = "管理员主页面";
             this.Load += new System.EventHandler(this.admin_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();

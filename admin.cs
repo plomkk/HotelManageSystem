@@ -28,5 +28,10 @@ namespace 酒店管理系统
             earnings.Show();
             this.Hide();
         }
+
+        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
