@@ -31,7 +31,7 @@ namespace 酒店管理系统
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-RD7CTBN;Initial Catalog=Hotel;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
             String sql1 = "update [order] set [state]='已退房' where [id_room]="+textBox1.Text.Trim();
             String sql2= "update [room] set [state]='可用'where [ID]=" + textBox1.Text.Trim();

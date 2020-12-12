@@ -33,5 +33,12 @@ namespace 酒店管理系统
         {
 
         }
+
+        private void 功能2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            管理_修改房间信息 a = new 管理_修改房间信息();
+            this.Close();
+            a.Show();
+        }
     }
 }

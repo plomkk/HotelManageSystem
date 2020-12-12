@@ -16,7 +16,7 @@ namespace 酒店管理系统
         public Earnings()
         {
             InitializeComponent();
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-RD7CTBN;Initial Catalog=Hotel;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
             String strSQL = "Select [ID],[id_room],[type_room],[price] from [order] where [state]='已退房'";
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(strSQL, conn);
