@@ -70,6 +70,12 @@
     <Compile Include="customer.Designer.cs">
       <DependentUpon>customer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fix.Designer.cs">
+      <DependentUpon>Fix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,18 +147,25 @@
     </Compile>
     <EmbeddedResource Include="admin.resx">
       <DependentUpon>admin.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Checkin.resx">
       <DependentUpon>Checkin.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckOut.resx">
       <DependentUpon>CheckOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="customer.resx">
       <DependentUpon>customer.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Earnings.resx">
       <DependentUpon>Earnings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fix.resx">
+      <DependentUpon>Fix.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

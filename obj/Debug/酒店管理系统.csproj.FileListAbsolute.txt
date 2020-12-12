@@ -130,3 +130,4 @@ F:\海事\课设_信息系统\new\HotelManageSystem\obj\Debug\酒店管理系统
 F:\海事\课设_信息系统\new\HotelManageSystem\obj\Debug\酒店管理系统.csproj.CoreCompileInputs.cache
 F:\海事\课设_信息系统\new\HotelManageSystem\obj\Debug\酒店管理系统.exe
 F:\海事\课设_信息系统\new\HotelManageSystem\obj\Debug\酒店管理系统.pdb
+F:\海事\课设_信息系统\new\HotelManageSystem\obj\Debug\酒店管理系统.Fix.resources

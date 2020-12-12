@@ -76,5 +76,22 @@ namespace 酒店管理系统
             this.Hide();
             s.Show();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Fix f = new Fix();
+            this.Close();
+            f.Show();
+        }
     }
 }

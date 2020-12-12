@@ -36,6 +36,7 @@
             this.RoomInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.Checkin = new System.Windows.Forms.ToolStripMenuItem();
             this.CheckOut = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,12 +50,14 @@
             this.功能4ToolStripMenuItem,
             this.RoomInfo,
             this.Checkin,
-            this.CheckOut});
+            this.CheckOut,
+            this.toolStripMenuItem3});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(900, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // 功能1ToolStripMenuItem
             // 
@@ -105,11 +108,18 @@
             this.CheckOut.Text = "办理退房手续";
             this.CheckOut.Click += new System.EventHandler(this.CheckOut_Click);
             // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(83, 24);
+            this.toolStripMenuItem3.Text = "申报修理";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            // 
             // stage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "stage";
@@ -132,5 +142,6 @@
         private System.Windows.Forms.ToolStripMenuItem RoomInfo;
         private System.Windows.Forms.ToolStripMenuItem Checkin;
         private System.Windows.Forms.ToolStripMenuItem CheckOut;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
     }
 }
