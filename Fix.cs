@@ -64,8 +64,7 @@ namespace 酒店管理系统
                 DataSet ds = new DataSet();
                 adp.Fill(ds);//把查询的内容放入数据集中
                 String concrete = tb_concrete.Text.Trim();
-                /*"insert into tb_Member(name,sex,nPlace) values ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "')"; */
-                string sql = "insert into fix(ID,concrete,if_sure) values('" + cb_id.Text.Trim() +"','"+ tb_concrete.Text.Trim()+ "','" + Int32.Parse("0") + "')";
+                string sql = "insert into fix(ID,concrete,if_sure) values('" + cb_id.Text.Trim() +"','"+ tb_concrete.Text.Trim()+ "','" + "待审理"+ "')";
                 SqlCommand cmd = new SqlCommand(sql, sqlConnection);
                 cmd.CommandText = sql;
                 cmd.ExecuteNonQuery();

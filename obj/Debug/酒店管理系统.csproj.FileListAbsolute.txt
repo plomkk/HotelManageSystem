@@ -131,3 +131,4 @@ F:\海事\课设_信息系统\new\HotelManageSystem\obj\Debug\酒店管理系统
 F:\海事\课设_信息系统\new\HotelManageSystem\obj\Debug\酒店管理系统.exe
 F:\海事\课设_信息系统\new\HotelManageSystem\obj\Debug\酒店管理系统.pdb
 F:\海事\课设_信息系统\new\HotelManageSystem\obj\Debug\酒店管理系统.Fix.resources
+F:\海事\课设_信息系统\new\HotelManageSystem\obj\Debug\酒店管理系统.管理_审理报修.resources

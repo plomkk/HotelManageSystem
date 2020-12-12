@@ -32,6 +32,7 @@
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.功能1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.功能2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.审理报修ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,10 +50,10 @@
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.功能1ToolStripMenuItem,
-            this.功能2ToolStripMenuItem});
+            this.功能2ToolStripMenuItem,
+            this.审理报修ToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStrip2.Size = new System.Drawing.Size(800, 28);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
@@ -71,6 +72,13 @@
             this.功能2ToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
             this.功能2ToolStripMenuItem.Text = "修改房间信息";
             this.功能2ToolStripMenuItem.Click += new System.EventHandler(this.功能2ToolStripMenuItem_Click);
+            // 
+            // 审理报修ToolStripMenuItem
+            // 
+            this.审理报修ToolStripMenuItem.Name = "审理报修ToolStripMenuItem";
+            this.审理报修ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.审理报修ToolStripMenuItem.Text = "审理报修";
+            this.审理报修ToolStripMenuItem.Click += new System.EventHandler(this.审理报修ToolStripMenuItem_Click);
             // 
             // admin
             // 
@@ -96,5 +104,6 @@
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem 功能1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 功能2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 审理报修ToolStripMenuItem;
     }
 }

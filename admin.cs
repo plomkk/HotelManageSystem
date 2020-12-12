@@ -40,5 +40,12 @@ namespace 酒店管理系统
             this.Close();
             a.Show();
         }
+
+        private void 审理报修ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            管理_审理报修 a = new 管理_审理报修();
+            this.Close();
+            a.Show();
+        }
     }
 }

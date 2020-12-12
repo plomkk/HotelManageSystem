@@ -88,6 +88,16 @@
     <Compile Include="Earnings.Designer.cs">
       <DependentUpon>Earnings.cs</DependentUpon>
     </Compile>
+    <Compile Include="HotelDatafdname.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelDatafdname.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HotelDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RoomInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +142,12 @@
     </Compile>
     <Compile Include="管理_修改房间信息.Designer.cs">
       <DependentUpon>管理_修改房间信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理_审理报修.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理_审理报修.Designer.cs">
+      <DependentUpon>管理_审理报修.cs</DependentUpon>
     </Compile>
     <Compile Include="顾客—修改订单信息.cs">
       <SubType>Form</SubType>
@@ -197,12 +213,37 @@
     <EmbeddedResource Include="客房预定.resx">
       <DependentUpon>客房预定.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="管理_审理报修.resx">
+      <DependentUpon>管理_审理报修.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="顾客—修改订单信息.resx">
       <DependentUpon>顾客—修改订单信息.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="顾客—查询订单信息.resx">
       <DependentUpon>顾客—查询订单信息.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="HotelDatafdname.xsc">
+      <DependentUpon>HotelDatafdname.xsd</DependentUpon>
+    </None>
+    <None Include="HotelDatafdname.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelDatafdname.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HotelDatafdname.xss">
+      <DependentUpon>HotelDatafdname.xsd</DependentUpon>
+    </None>
+    <None Include="HotelDataSet.xsc">
+      <DependentUpon>HotelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HotelDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HotelDataSet.xss">
+      <DependentUpon>HotelDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
