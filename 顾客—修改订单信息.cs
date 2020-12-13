@@ -21,7 +21,7 @@ namespace 酒店管理系统
         private void 顾客修改订单信息_Load(object sender, EventArgs e)
         {
             //打开数据库连接
-            String mycon = @"Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True";//数据库实例连接字符串
+            String mycon = @"Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True";//数据库实例连接字符串
             SqlConnection sqlConnection = new SqlConnection(mycon);//新建数据库连接实例
             sqlConnection.Open();
 
@@ -50,7 +50,7 @@ namespace 酒店管理系统
         private void button2_Click(object sender, EventArgs e)
         {
             //打开数据库连接
-            String mycon = @"Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True";//数据库实例连接字符串
+            String mycon = @"Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True";//数据库实例连接字符串
             SqlConnection sqlConnection = new SqlConnection(mycon);//新建数据库连接实例
             sqlConnection.Open();
 
@@ -65,7 +65,7 @@ namespace 酒店管理系统
                 adp.Fill(ds);//把查询的内容放入数据集中
                 if (ds.Tables[0].Rows.Count != 0)//如果在order表中查询到该订单编号
                 {
-                    string sql1 = "update [order] set [name1]='" + name1.Text.Trim() + "',[name2]='" + name2.Text.Trim() + "',[name3]='" + name3.Text.Trim() + "',[id_name1]='" + id_number1.Text.Trim() + "',[id_name2]='" + id_number2.Text.Trim() + "',[id_name3]='" + id_number3.Text.Trim() + "',[type_room]='" + type.Text.Trim() + "',[phonenumber]='" + phonenumber.Text.Trim() + "',[checkin_date]='" + checkin_date.Text.Trim() + "',[checkout_date]='" + checkout_date.Text.Trim() + "',[numberofdays]='" + Int32.Parse(numberofdays.Text.Trim()) + "'";
+                    string sql1 = "update [order] set [name1]='" + name1.Text.Trim() + "',[name2]='" + name2.Text.Trim() + "',[name3]='" + name3.Text.Trim() + "',[id_name1]='" + id_number1.Text.Trim() + "',[id_name2]='" + id_number2.Text.Trim() + "',[id_name3]='" + id_number3.Text.Trim() + "',[type_room]='" + type.Text.Trim() + "',[phonenumber]='" + phonenumber.Text.Trim() + "',[checkin_date]='" + checkin_date.Text.Trim() + "',[checkout_date]='" + checkout_date.Text.Trim() + "',[numberofdays]='" + Int32.Parse(numberofdays.Text.Trim()) + "'where [ID]='" + id_order.Text.Trim() + "'";
                     SqlCommand cmd = new SqlCommand(sql1, sqlConnection);
                     cmd.CommandText = sql1;
                     cmd.ExecuteNonQuery();

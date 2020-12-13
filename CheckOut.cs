@@ -31,7 +31,7 @@ namespace 酒店管理系统
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
             String sql1 = "update [order] set [state]='已退房' where [id_room]="+textBox1.Text.Trim();
             String sql2= "update [room] set [state]='可用'where [ID]=" + textBox1.Text.Trim();
@@ -62,6 +62,11 @@ namespace 酒店管理系统
             dataGridView1.Columns[12].HeaderText = "入住天数";
             dataGridView1.Columns[13].HeaderText = "联系方式";
             dataGridView1.Columns[14].HeaderText = "订单状态";
+        }
+
+        private void CheckOut_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

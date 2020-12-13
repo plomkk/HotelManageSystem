@@ -37,7 +37,7 @@ namespace 酒店管理系统
         private void button1_Click(object sender, EventArgs e)
         {
 
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
             String sql = "insert into [order]([ID],[name1],[id_name1],[name2],[id_name2],[name3],[id_name3],[type_room],[checkin_date],[checkout_date],[numberofdays],[phonenumber],[state])values('" + ID.Text.Trim() + "','" + name1.Text.Trim() + "','" + id_name1.Text.Trim() + "','" + name2.Text.Trim() + "','" + id_name2.Text.Trim() + "','" + name3.Text.Trim() + "','" + id_name3.Text.Trim() + "','" + type_room.Text.Trim() + "','" + checkin_date.Text.Trim() + "','" + checkout_date.Text.Trim() + "','" + Int32.Parse(numberofdays.Text) + "','" + phonenumber.Text.Trim() + "','未入住')";
             SqlCommand sqlCommand = new SqlCommand(sql, conn);

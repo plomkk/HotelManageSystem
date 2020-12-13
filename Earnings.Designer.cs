@@ -38,9 +38,9 @@ namespace 酒店管理系统
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 13F);
-            this.label1.Location = new System.Drawing.Point(260, 38);
+            this.label1.Location = new System.Drawing.Point(231, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 26);
+            this.label1.Size = new System.Drawing.Size(208, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "显示本月订单收益表";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -48,23 +48,26 @@ namespace 酒店管理系统
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(40, 94);
+            this.dataGridView1.Location = new System.Drawing.Point(36, 78);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(701, 305);
+            this.dataGridView1.Size = new System.Drawing.Size(623, 254);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Earnings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(711, 375);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Earnings";
             this.Text = "查看收益表";
+            this.Load += new System.EventHandler(this.Earnings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

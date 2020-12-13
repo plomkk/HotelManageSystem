@@ -16,7 +16,7 @@ namespace 酒店管理系统
         public Earnings()
         {
             InitializeComponent();
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
             String strSQL = "Select [ID],[id_room],[type_room],[price] from [order] where [state]='已退房'";
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(strSQL, conn);
@@ -36,6 +36,11 @@ namespace 酒店管理系统
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Earnings_Load(object sender, EventArgs e)
         {
 
         }

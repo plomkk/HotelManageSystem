@@ -35,7 +35,7 @@ namespace 酒店管理系统
 
         private void bt_sure_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
             DialogResult dr = MessageBox.Show("请问是否通过审理？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
