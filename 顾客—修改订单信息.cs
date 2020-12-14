@@ -54,17 +54,17 @@ namespace 酒店管理系统
             SqlConnection sqlConnection = new SqlConnection(mycon);//新建数据库连接实例
             sqlConnection.Open();
 
-
-            DialogResult dr = MessageBox.Show("确定修改此订单？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dr == DialogResult.Yes)
+            String strSQL = "Select* from [order] where [ID]='" + id_order.Text.Trim() + "'";
+            SqlDataAdapter adp = new SqlDataAdapter(strSQL, mycon);//建立一个数据适配器和数据集
+            DataSet ds = new DataSet();
+            adp.Fill(ds);//把查询的内容放入数据集中
+            if (ds.Tables[0].Rows.Count != 0)//如果在order表中查询到该订单编号
             {
 
-                String strSQL = "Select* from [order] where [ID]='" + id_order.Text.Trim() + "'";
-                SqlDataAdapter adp = new SqlDataAdapter(strSQL, mycon);//建立一个数据适配器和数据集
-                DataSet ds = new DataSet();
-                adp.Fill(ds);//把查询的内容放入数据集中
-                if (ds.Tables[0].Rows.Count != 0)//如果在order表中查询到该订单编号
+                DialogResult dr = MessageBox.Show("确定修改此订单？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
                 {
+
                     string sql1 = "update [order] set [name1]='" + name1.Text.Trim() + "',[name2]='" + name2.Text.Trim() + "',[name3]='" + name3.Text.Trim() + "',[id_name1]='" + id_number1.Text.Trim() + "',[id_name2]='" + id_number2.Text.Trim() + "',[id_name3]='" + id_number3.Text.Trim() + "',[type_room]='" + type.Text.Trim() + "',[phonenumber]='" + phonenumber.Text.Trim() + "',[checkin_date]='" + checkin_date.Text.Trim() + "',[checkout_date]='" + checkout_date.Text.Trim() + "',[numberofdays]='" + Int32.Parse(numberofdays.Text.Trim()) + "'where [ID]='" + id_order.Text.Trim() + "'";
                     SqlCommand cmd = new SqlCommand(sql1, sqlConnection);
                     cmd.CommandText = sql1;
@@ -137,13 +137,13 @@ namespace 酒店管理系统
                 }
                 else
                 {
-                    MessageBox.Show("订单编号输入错误，请您输入正确的订单编号", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    id_order.Clear();
+                    this.Show();
                 }
             }
             else
             {
-                this.Show();
+                MessageBox.Show("订单编号输入错误，请您输入正确的订单编号", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                id_order.Clear();
             }
 
 

@@ -154,6 +154,7 @@
             // 
             // id_order
             // 
+            this.id_order.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.id_order.FormattingEnabled = true;
             this.id_order.Location = new System.Drawing.Point(118, 59);
             this.id_order.Name = "id_order";

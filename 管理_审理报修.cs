@@ -28,8 +28,10 @@ namespace 酒店管理系统
 
         private void 管理_审理报修_Load(object sender, EventArgs e)
         {
+            // TODO: 这行代码将数据加载到表“hotelDataSet1.fix”中。您可以根据需要移动或删除它。
+            this.fixTableAdapter2.Fill(this.hotelDataSet1.fix);
             // TODO: 这行代码将数据加载到表“hotelDatafdname.fix”中。您可以根据需要移动或删除它。
-            this.fixTableAdapter1.Fill(this.hotelDatafdname.fix);
+            //this.fixTableAdapter1.Fill(this.hotelDatafdname.fix);
 
         }
 

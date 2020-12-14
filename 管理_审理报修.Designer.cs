@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.bt_sure = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -39,17 +39,22 @@
             this.fixBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fixTableAdapter = new 酒店管理系统.HotelDataSetTableAdapters.fixTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.hotelDatafdname = new 酒店管理系统.HotelDatafdname();
-            this.fixBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.fixTableAdapter1 = new 酒店管理系统.HotelDatafdnameTableAdapters.fixTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.concreteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ifsureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fixBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.hotelDatafdname = new 酒店管理系统.HotelDatafdname();
+            this.fixTableAdapter1 = new 酒店管理系统.HotelDatafdnameTableAdapters.fixTableAdapter();
+            this.hotelDataSet1 = new 酒店管理系统.HotelDataSet1();
+            this.fixBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.fixTableAdapter2 = new 酒店管理系统.HotelDataSet1TableAdapters.fixTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelDatafdname)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDatafdname)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +63,7 @@
             this.label1.Font = new System.Drawing.Font("华文楷体", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(263, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 42);
+            this.label1.Size = new System.Drawing.Size(285, 43);
             this.label1.TabIndex = 1;
             this.label1.Text = "全部报修信息：";
             // 
@@ -106,7 +111,7 @@
             this.iDDataGridViewTextBoxColumn,
             this.concreteDataGridViewTextBoxColumn,
             this.ifsureDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.fixBindingSource1;
+            this.dataGridView1.DataSource = this.fixBindingSource2;
             this.dataGridView1.Location = new System.Drawing.Point(12, 105);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -114,27 +119,13 @@
             this.dataGridView1.Size = new System.Drawing.Size(776, 235);
             this.dataGridView1.TabIndex = 4;
             // 
-            // hotelDatafdname
-            // 
-            this.hotelDatafdname.DataSetName = "HotelDatafdname";
-            this.hotelDatafdname.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // fixBindingSource1
-            // 
-            this.fixBindingSource1.DataMember = "fix";
-            this.fixBindingSource1.DataSource = this.hotelDatafdname;
-            // 
-            // fixTableAdapter1
-            // 
-            this.fixTableAdapter1.ClearBeforeFill = true;
-            // 
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-            this.iDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+            this.iDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
             this.iDDataGridViewTextBoxColumn.HeaderText = "房间ID";
             this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
@@ -143,9 +134,9 @@
             // 
             this.concreteDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.concreteDataGridViewTextBoxColumn.DataPropertyName = "concrete";
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-            this.concreteDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+            this.concreteDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
             this.concreteDataGridViewTextBoxColumn.HeaderText = "损坏部件";
             this.concreteDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.concreteDataGridViewTextBoxColumn.Name = "concreteDataGridViewTextBoxColumn";
@@ -154,12 +145,40 @@
             // 
             this.ifsureDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ifsureDataGridViewTextBoxColumn.DataPropertyName = "if_sure";
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-            this.ifsureDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+            this.ifsureDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
             this.ifsureDataGridViewTextBoxColumn.HeaderText = "是否确认";
             this.ifsureDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ifsureDataGridViewTextBoxColumn.Name = "ifsureDataGridViewTextBoxColumn";
+            // 
+            // fixBindingSource1
+            // 
+            this.fixBindingSource1.DataMember = "fix";
+            this.fixBindingSource1.DataSource = this.hotelDatafdname;
+            // 
+            // hotelDatafdname
+            // 
+            this.hotelDatafdname.DataSetName = "HotelDatafdname";
+            this.hotelDatafdname.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // fixTableAdapter1
+            // 
+            this.fixTableAdapter1.ClearBeforeFill = true;
+            // 
+            // hotelDataSet1
+            // 
+            this.hotelDataSet1.DataSetName = "HotelDataSet1";
+            this.hotelDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // fixBindingSource2
+            // 
+            this.fixBindingSource2.DataMember = "fix";
+            this.fixBindingSource2.DataSource = this.hotelDataSet1;
+            // 
+            // fixTableAdapter2
+            // 
+            this.fixTableAdapter2.ClearBeforeFill = true;
             // 
             // 管理_审理报修
             // 
@@ -176,8 +195,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelDatafdname)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDatafdname)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,5 +218,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn concreteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ifsureDataGridViewTextBoxColumn;
+        private HotelDataSet1 hotelDataSet1;
+        private System.Windows.Forms.BindingSource fixBindingSource2;
+        private HotelDataSet1TableAdapters.fixTableAdapter fixTableAdapter2;
     }
 }
