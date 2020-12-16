@@ -44,5 +44,12 @@ namespace 酒店管理系统
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            admin a = new admin();
+            a.Show();
+            this.Hide();
+        }
     }
 }

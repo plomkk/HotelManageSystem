@@ -79,5 +79,12 @@ namespace 酒店管理系统
             Room.Items.Add("蜜月套房");
             Room.Items.Add("商务套房");
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            stage s = new stage();
+            s.Show();
+            this.Hide();
+        }
     }
 }

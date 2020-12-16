@@ -49,5 +49,12 @@ namespace 酒店管理系统
             A.Show();
             this.Hide();
         }
+
+        private void RoomInfotoolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            RoomInfo roomInfo = new RoomInfo();
+            roomInfo.Show();
+            this.Hide();
+        }
     }
 }

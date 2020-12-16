@@ -68,5 +68,12 @@ namespace 酒店管理系统
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            stage s = new stage();
+            s.Show();
+            this.Hide();
+        }
     }
 }
