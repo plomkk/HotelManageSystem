@@ -33,6 +33,7 @@
             this.功能1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.功能2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.审理报修ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.注销ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,8 @@
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.功能1ToolStripMenuItem,
             this.功能2ToolStripMenuItem,
-            this.审理报修ToolStripMenuItem});
+            this.审理报修ToolStripMenuItem,
+            this.注销ToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(800, 28);
@@ -80,6 +82,13 @@
             this.审理报修ToolStripMenuItem.Text = "审理报修";
             this.审理报修ToolStripMenuItem.Click += new System.EventHandler(this.审理报修ToolStripMenuItem_Click);
             // 
+            // 注销ToolStripMenuItem
+            // 
+            this.注销ToolStripMenuItem.Name = "注销ToolStripMenuItem";
+            this.注销ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.注销ToolStripMenuItem.Text = "注销";
+            this.注销ToolStripMenuItem.Click += new System.EventHandler(this.注销ToolStripMenuItem_Click);
+            // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -105,5 +114,6 @@
         private System.Windows.Forms.ToolStripMenuItem 功能1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 功能2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 审理报修ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 注销ToolStripMenuItem;
     }
 }

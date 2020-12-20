@@ -21,7 +21,7 @@ namespace 酒店管理系统
         private void 顾客修改订单信息_Load(object sender, EventArgs e)
         {
             //打开数据库连接
-            String mycon = @"Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True";//数据库实例连接字符串
+            String mycon = @"Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True";//数据库实例连接字符串
             SqlConnection sqlConnection = new SqlConnection(mycon);//新建数据库连接实例
             sqlConnection.Open();
 
@@ -50,7 +50,7 @@ namespace 酒店管理系统
         private void button2_Click(object sender, EventArgs e)
         {
             //打开数据库连接
-            String mycon = @"Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True";//数据库实例连接字符串
+            String mycon = @"Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True";//数据库实例连接字符串
             SqlConnection sqlConnection = new SqlConnection(mycon);//新建数据库连接实例
             sqlConnection.Open();
 

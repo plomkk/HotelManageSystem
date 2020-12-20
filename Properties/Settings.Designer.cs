@@ -36,7 +36,7 @@ namespace 酒店管理系统.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True")]
         public string HotelConnectionString1 {
             get {
                 return ((string)(this["HotelConnectionString1"]));

@@ -47,5 +47,12 @@ namespace 酒店管理系统
             this.Close();
             a.Show();
         }
+
+        private void 注销ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 f = new Form1();
+            f.Show();
+        }
     }
 }

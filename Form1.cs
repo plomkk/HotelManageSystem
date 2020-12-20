@@ -33,7 +33,7 @@ namespace 酒店管理系统
           
           
         }
-
+      
         private void login_Click(object sender, EventArgs e)
         {
             String id = user_id.Text;
