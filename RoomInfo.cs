@@ -13,9 +13,11 @@ namespace 酒店管理系统
 {
     public partial class RoomInfo : Form
     {
-        public RoomInfo()
+        int flag;
+        public RoomInfo(int f)
         {
             InitializeComponent();
+            flag = f;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -91,9 +93,18 @@ namespace 酒店管理系统
 
         private void button3_Click(object sender, EventArgs e)
         {
-            customer s = new customer();
-            s.Show();
-            this.Hide();
+            if (flag == 0)
+            {
+                customer s = new customer();
+                s.Show();
+                this.Hide();
+            }
+            else
+            {
+                stage s = new stage();
+                s.Show();
+                this.Hide();
+            }
         }
     }
 }

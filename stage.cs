@@ -51,7 +51,7 @@ namespace 酒店管理系统
 
         private void RoomInfo_Click(object sender, EventArgs e)
         {
-            RoomInfo Room = new RoomInfo();
+            RoomInfo Room = new RoomInfo(1);
             Room.Show();
             this.Hide();
         }

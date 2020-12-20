@@ -45,14 +45,14 @@ namespace 酒店管理系统
 
         private void 取消预订ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            取消订单 A = new 取消订单(1);
+            取消订单 A = new 取消订单(0);
             A.Show();
             this.Hide();
         }
 
         private void RoomInfotoolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            RoomInfo roomInfo = new RoomInfo();
+            RoomInfo roomInfo = new RoomInfo(0);
             roomInfo.Show();
             this.Hide();
         }
@@ -66,7 +66,7 @@ namespace 酒店管理系统
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            取消订单 A = new 取消订单(1);
+            取消订单 A = new 取消订单(0);
             A.Show();
             this.Hide();
         }
