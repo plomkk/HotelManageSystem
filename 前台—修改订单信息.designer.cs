@@ -248,6 +248,7 @@
             // 
             // numberofdays
             // 
+            this.numberofdays.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.numberofdays.FormattingEnabled = true;
             this.numberofdays.Items.AddRange(new object[] {
             "1",

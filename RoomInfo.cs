@@ -30,7 +30,7 @@ namespace 酒店管理系统
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
             String strSQL = "select * from [room] where [id]='"+textBox1.Text.Trim()+"'";
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(strSQL,conn);
@@ -58,7 +58,7 @@ namespace 酒店管理系统
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
             String strSQL = "select * from [room]";
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(strSQL, conn);
@@ -91,7 +91,7 @@ namespace 酒店管理系统
 
         private void button3_Click(object sender, EventArgs e)
         {
-            stage s = new stage();
+            customer s = new customer();
             s.Show();
             this.Hide();
         }

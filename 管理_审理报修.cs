@@ -28,8 +28,10 @@ namespace 酒店管理系统
 
         private void 管理_审理报修_Load(object sender, EventArgs e)
         {
+            // TODO: 这行代码将数据加载到表“hotelDataSet2.fix”中。您可以根据需要移动或删除它。
+            this.fixTableAdapter3.Fill(this.hotelDataSet2.fix);
             // TODO: 这行代码将数据加载到表“hotelDataSet1.fix”中。您可以根据需要移动或删除它。
-            this.fixTableAdapter2.Fill(this.hotelDataSet1.fix);
+           // this.fixTableAdapter2.Fill(this.hotelDataSet1.fix);
             // TODO: 这行代码将数据加载到表“hotelDatafdname.fix”中。您可以根据需要移动或删除它。
             //this.fixTableAdapter1.Fill(this.hotelDatafdname.fix);
 
@@ -38,7 +40,7 @@ namespace 酒店管理系统
 
         private void bt_sure_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
             DialogResult dr = MessageBox.Show("请问是否通过审理？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)

@@ -103,6 +103,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HotelDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HotelDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RoomInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +264,17 @@
     </None>
     <None Include="HotelDataSet1.xss">
       <DependentUpon>HotelDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HotelDataSet2.xsc">
+      <DependentUpon>HotelDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HotelDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HotelDataSet2.xss">
+      <DependentUpon>HotelDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

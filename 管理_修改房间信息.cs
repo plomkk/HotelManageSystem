@@ -21,7 +21,7 @@ namespace 酒店管理系统
 
         private void 管理_修改房间信息_Load(object sender, EventArgs e)
         {
-            string constr = "Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True";
+            string constr = "Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True";
             //"user id=sa;pwd=;";
             SqlConnection con = new SqlConnection(constr);
             string sql = "select ID from room";
@@ -47,7 +47,7 @@ namespace 酒店管理系统
 
         private void bt_sure_Click(object sender, EventArgs e)
         {
-            String mycon = @"Data Source=DESKTOP-MGER175;Initial Catalog=Hotel;Integrated Security=True";//数据库实例连接字符串
+            String mycon = @"Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True";//数据库实例连接字符串
             SqlConnection sqlConnection = new SqlConnection(mycon);//新建数据库连接实例
             sqlConnection.Open();
             DialogResult dr = MessageBox.Show("确定修改？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);

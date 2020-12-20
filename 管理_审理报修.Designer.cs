@@ -42,19 +42,24 @@
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.concreteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ifsureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fixBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.hotelDataSet1 = new 酒店管理系统.HotelDataSet1();
             this.fixBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.hotelDatafdname = new 酒店管理系统.HotelDatafdname();
             this.fixTableAdapter1 = new 酒店管理系统.HotelDatafdnameTableAdapters.fixTableAdapter();
-            this.hotelDataSet1 = new 酒店管理系统.HotelDataSet1();
-            this.fixBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.fixTableAdapter2 = new 酒店管理系统.HotelDataSet1TableAdapters.fixTableAdapter();
+            this.hotelDataSet2 = new 酒店管理系统.HotelDataSet2();
+            this.fixBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.fixTableAdapter3 = new 酒店管理系统.HotelDataSet2TableAdapters.fixTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDatafdname)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -111,7 +116,7 @@
             this.iDDataGridViewTextBoxColumn,
             this.concreteDataGridViewTextBoxColumn,
             this.ifsureDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.fixBindingSource2;
+            this.dataGridView1.DataSource = this.fixBindingSource3;
             this.dataGridView1.Location = new System.Drawing.Point(12, 105);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -152,6 +157,16 @@
             this.ifsureDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ifsureDataGridViewTextBoxColumn.Name = "ifsureDataGridViewTextBoxColumn";
             // 
+            // fixBindingSource2
+            // 
+            this.fixBindingSource2.DataMember = "fix";
+            this.fixBindingSource2.DataSource = this.hotelDataSet1;
+            // 
+            // hotelDataSet1
+            // 
+            this.hotelDataSet1.DataSetName = "HotelDataSet1";
+            this.hotelDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // fixBindingSource1
             // 
             this.fixBindingSource1.DataMember = "fix";
@@ -166,19 +181,23 @@
             // 
             this.fixTableAdapter1.ClearBeforeFill = true;
             // 
-            // hotelDataSet1
-            // 
-            this.hotelDataSet1.DataSetName = "HotelDataSet1";
-            this.hotelDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // fixBindingSource2
-            // 
-            this.fixBindingSource2.DataMember = "fix";
-            this.fixBindingSource2.DataSource = this.hotelDataSet1;
-            // 
             // fixTableAdapter2
             // 
             this.fixTableAdapter2.ClearBeforeFill = true;
+            // 
+            // hotelDataSet2
+            // 
+            this.hotelDataSet2.DataSetName = "HotelDataSet2";
+            this.hotelDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // fixBindingSource3
+            // 
+            this.fixBindingSource3.DataMember = "fix";
+            this.fixBindingSource3.DataSource = this.hotelDataSet2;
+            // 
+            // fixTableAdapter3
+            // 
+            this.fixTableAdapter3.ClearBeforeFill = true;
             // 
             // 管理_审理报修
             // 
@@ -195,10 +214,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDatafdname)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fixBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,5 +242,8 @@
         private HotelDataSet1 hotelDataSet1;
         private System.Windows.Forms.BindingSource fixBindingSource2;
         private HotelDataSet1TableAdapters.fixTableAdapter fixTableAdapter2;
+        private HotelDataSet2 hotelDataSet2;
+        private System.Windows.Forms.BindingSource fixBindingSource3;
+        private HotelDataSet2TableAdapters.fixTableAdapter fixTableAdapter3;
     }
 }
