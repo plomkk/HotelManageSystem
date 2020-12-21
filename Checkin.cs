@@ -33,7 +33,7 @@ namespace 酒店管理系统
             {
                 String sql1 = "update [order] set [id_room]=" + dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim() + ",[price]=" + dataGridView1.CurrentRow.Cells[2].Value.ToString().Trim() + " where [ID]=" + textBox1.Text.Trim();
                 String sql2 = "update [order] set [state]='已入住'";
-                String sql3 = "update [room] set [state]='不可用'where [ID]=" + dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim();
+                String sql3 = "update [room] set [state]='使用中'where [ID]=" + dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim();
                 SqlCommand cmd1 = new SqlCommand(sql1, conn);
                 SqlCommand cmd2 = new SqlCommand(sql2, conn);
                 SqlCommand cmd3 = new SqlCommand(sql3, conn);
