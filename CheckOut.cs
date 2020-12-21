@@ -34,7 +34,7 @@ namespace 酒店管理系统
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U9OI8BO;Initial Catalog=Hotel;Integrated Security=True");
             conn.Open();
             String sql1 = "update [order] set [state]='已退房' where [id_room]="+textBox1.Text.Trim();
-            String sql2= "update [room] set [state]='可用'where [ID]=" + textBox1.Text.Trim();
+            String sql2= "update [room] set [state]='空闲'where [ID]=" + textBox1.Text.Trim();
             SqlCommand cmd1 = new SqlCommand(sql1, conn);
             SqlCommand cmd2 = new SqlCommand(sql2, conn);
             cmd1.CommandText = sql1;

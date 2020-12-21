@@ -230,3 +230,5 @@ C:\Users\Dell\Desktop\课设最终版\obj\Debug\酒店管理系统.顾客查询�
 C:\Users\Dell\Desktop\课设最终版\obj\Debug\酒店管理系统.csproj.GenerateResource.cache
 C:\Users\Dell\Desktop\课设最终版\obj\Debug\酒店管理系统.exe
 C:\Users\Dell\Desktop\课设最终版\obj\Debug\酒店管理系统.pdb
+C:\Users\baby_\Source\Repos\plomkk\HotelManageSystem\obj\Debug\酒店管理系统.Fix.resources
+C:\Users\baby_\Source\Repos\plomkk\HotelManageSystem\obj\Debug\酒店管理系统.管理_审理报修.resources
